@@ -2,7 +2,6 @@
   "name": "market-price-tracker",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://abdevii.github.io/stock-price-tracker",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
