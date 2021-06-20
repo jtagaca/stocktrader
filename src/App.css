@@ -26,6 +26,53 @@ body {
   color: black;
   padding: 40px;
 }
+
+.container > .row > .headerjt {
+  animation: swashIn 2900ms both;
+}
+
+.container > .row > .searchbox-position {
+  animation: tinInRight 2900ms both;
+}
+
+@keyframes tinInRight {
+  0% {
+    opacity: 0;
+    transform: scale3d(1, 1, 1) translateX(900%);
+  }
+
+  50%,
+  70%,
+  90% {
+    opacity: 1;
+    transform: scale3d(1.1, 1.1, 1.1) translateX(0);
+  }
+
+  60%,
+  80%,
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1) translateX(0);
+  }
+}
+
+@keyframes swashIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0, 0, 0);
+  }
+
+  90% {
+    opacity: 1;
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
 .jumbotron {
   height: 24%;
   padding: 4.35% 0;
