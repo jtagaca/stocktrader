@@ -2,6 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background-color: black;
 }
 
 #root {
@@ -9,25 +10,37 @@ body {
 }
 
 :root {
-  --sk-color: #dc50ffcc;
+  --sk-color: black;
   --sk-size: 2.5rem;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerjt {
+  background: #98fb98;
+  border-radius: 40px;
+  color: black;
+  padding: 40px;
+}
 .jumbotron {
   height: 24%;
   padding: 4.35% 0;
   margin: 0;
-  background: linear-gradient(to bottom right, #dc50ffcc, #5350ffcc);
+  background: black;
   color: floralwhite;
 }
 
 .font-header_1 {
-  font-family: 'Brygada 1918', serif;
+  font-family: "Brygada 1918", serif;
   font-weight: 700;
 }
 
 .font-header_2 {
-  font-family: 'Brygada 1918', serif;
+  font-family: "Brygada 1918", serif;
   font-weight: 400;
 }
 
