@@ -120,6 +120,13 @@ body {
   }
 }
 
+.result {
+  background: #98fb98;
+  color: black;
+  border-radius: 60px;
+  width: 400px;
+  padding: 30px;
+}
 @media screen and (max-width: 767px) {
   .searchbox-position {
     padding: 0rem;
@@ -135,7 +142,7 @@ body {
 }
 
 .title {
-  font-size: 1rem;
+  font-size: 40px;
 }
 
 .quote-size {
