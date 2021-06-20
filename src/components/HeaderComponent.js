@@ -8,10 +8,7 @@ export const Header = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 text-center headerjt">
-            <h1 className="font-header_1">STOCK TRACKER</h1>
-            <h6 className="font-header_2">
-              REAL-TIME PRICES FROM THE STOCK EXCHANGES
-            </h6>
+            <h1 className="font-header_1">STOCK FINDER</h1>
           </div>
         </div>
       </div>
