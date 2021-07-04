@@ -2,6 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background-color: black;
 }
 
 #root {
@@ -9,25 +10,85 @@ body {
 }
 
 :root {
-  --sk-color: #dc50ffcc;
+  --sk-color: black;
   --sk-size: 2.5rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerjt {
+  background: #98fb98;
+  border-radius: 40px;
+  color: black;
+  padding: 40px;
+}
+
+.container > .row > .headerjt {
+  animation: swashIn 2900ms both;
+}
+
+.container > .row > .searchbox-position {
+  animation: tinInRight 2900ms both;
+}
+
+@keyframes tinInRight {
+  0% {
+    opacity: 0;
+    transform: scale3d(1, 1, 1) translateX(900%);
+  }
+
+  50%,
+  70%,
+  90% {
+    opacity: 1;
+    transform: scale3d(1.1, 1.1, 1.1) translateX(0);
+  }
+
+  60%,
+  80%,
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1) translateX(0);
+  }
+}
+
+@keyframes swashIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0, 0, 0);
+  }
+
+  90% {
+    opacity: 1;
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 .jumbotron {
   height: 24%;
   padding: 4.35% 0;
   margin: 0;
-  background: linear-gradient(to bottom right, #dc50ffcc, #5350ffcc);
+  background: black;
   color: floralwhite;
 }
 
 .font-header_1 {
-  font-family: 'Brygada 1918', serif;
+  font-family: "Brygada 1918", serif;
   font-weight: 700;
+  font-size: 70px;
 }
 
 .font-header_2 {
-  font-family: 'Brygada 1918', serif;
+  font-family: "Brygada 1918", serif;
   font-weight: 400;
 }
 
@@ -59,6 +120,13 @@ body {
   }
 }
 
+.result {
+  background: #98fb98;
+  color: black;
+  border-radius: 60px;
+  width: 400px;
+  padding: 30px;
+}
 @media screen and (max-width: 767px) {
   .searchbox-position {
     padding: 0rem;
@@ -74,7 +142,7 @@ body {
 }
 
 .title {
-  font-size: 1rem;
+  font-size: 40px;
 }
 
 .quote-size {

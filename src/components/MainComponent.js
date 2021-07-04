@@ -1,16 +1,14 @@
-import React, { Component } from 'react';
-import { Header } from './HeaderComponent';
-import { Body } from './BodyComponent';
-import { Footer } from './FooterComponent';
+import React, { Component } from "react";
+import { Header } from "./HeaderComponent";
+import { Body } from "./BodyComponent";
 
 export class Main extends Component {
-    render() {
-        return (
-            <React.Fragment>
-                <Header />
-                <Body />
-                <Footer />
-            </React.Fragment>
-        );
-    }
+  render() {
+    return (
+      <React.Fragment>
+        <Header />
+        <Body />
+      </React.Fragment>
+    );
+  }
 }
